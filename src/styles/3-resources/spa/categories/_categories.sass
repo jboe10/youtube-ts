@@ -1,0 +1,51 @@
+
+.video-categories-wrap
+  overflow-x: hidden;
+  white-space: nowrap;
+  border-bottom: 1px $hoverLightGray solid;
+  border-top: 1px $lightGray solid;
+  .video-categories
+    padding: 1em;
+    .scroll-arrow
+      padding: 1em 0 1em 0;
+      line-height: 1.9em;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0%;
+      width: 5%;
+      z-index: 2000;
+      opacity: 
+      background: linear-gradient(to left, rgba(255,255,255,0),white, white, white, white, white,white, white, white);
+      .arrow
+        text-align: center;
+        display: block;
+    .right
+      left: 95%;
+      background: linear-gradient(to right, rgba(255,255,255,0), white, white, white, white, white,white, white, white);
+
+    a
+      display: inline-block;
+      margin-right: 1em;
+      margin-left: 1em;
+      &:hover
+        text-decoration: none;
+      .category-bubble
+        border: 1px solid gray;
+        background-color: $lightGray;
+        font-size: .89em;
+        border-radius: 1em;
+        padding-left: .7em;
+        padding-right: .7em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover
+          background-color: $hoverLightGray;
+        .cat-name
+          line-height: 1em;
+      
+  

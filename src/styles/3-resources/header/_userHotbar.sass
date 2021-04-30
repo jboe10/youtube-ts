@@ -1,0 +1,27 @@
+.user-hotbar
+  margin-left: 10%;
+  display: flex;
+  .user-hotbar-button
+    margin-right: .5em;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    outline: none;
+    &:active 
+      background-color: $hoverLightGray;
+      outline: none;
+      border: 1px $hoverLightGray solid;
+    .svg-inline--fa
+      width: 1.3em;
+      height: auto;
+  .user-hotbar-profile-button
+    background-color: white;
+    border: none;
+    outline: none;
+    img
+      width: 2.5em;
+      height: 2.5em;
+      border-radius: 50%;
+      overflow: hidden;

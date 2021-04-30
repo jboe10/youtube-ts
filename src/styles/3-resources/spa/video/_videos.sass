@@ -1,0 +1,24 @@
+.spa-videos
+  display: grid;
+  overflow-y: scroll;
+  background-color: $lightGray;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 2em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2em .8em;
+@media screen and ( max-width: 1145px )
+  .spa-videos
+    grid-template-columns: 1fr 1fr 1fr
+@media screen and ( max-width: 890px )
+  .spa-videos
+    grid-template-columns: 1fr 1fr;
+    padding-left: 0;
+    padding-right: 0;
+@media screen and ( max-width: 515px )
+  .spa-videos
+    grid-template-columns: 1fr;
+    padding-left: 3em;
+    padding-right: 3em;
+  
+  

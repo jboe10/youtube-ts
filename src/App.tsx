@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Header } from './componenets/header/Header';
+import { Sidebar } from './componenets/sidebar/Sidebar';
+import { SpaHome } from './componenets/spa/SpaHome';
+import { SidebarCollapseContext, SidebarContextType } from './context/SidebarCollapseContext';
+
 
 function App() {
+  
+  const [sidebarCollapse, setSidebarCollapse] = useState(true);
+  const defaultCollapseContext: SidebarContextType = {
+    collapsed: sidebarCollapse,
+    changeCollapsed: setSidebarCollapse
+  }
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SidebarCollapseContext.Provider value={defaultCollapseContext}>
+      <div className="App">
+        <div className="home-page">
+          <Header/>
+          <div className="body">
+            <Sidebar/>
+            <SpaHome/>
+          </div>
+        </div>
+      </div>
+    </SidebarCollapseContext.Provider>
   );
 }
 

@@ -1,0 +1,31 @@
+.header-search-bar
+  display: flex;
+  height: 2.2rem;
+  .input-group
+    max-height: 2.2rem;
+    .form-control
+      border-radius: 0;
+      max-height: 2.2rem;
+      height: auto;
+    .input-group-append
+      max-height: 2.2rem;
+      &:hover
+        .input-group-text
+          background-color: $hoverLightGray; 
+          svg
+            color: #5d5d5d;
+      .input-group-text
+        border-radius: 0;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        background-color: $lightGray;
+        svg
+          color: #9c9c9c;
+  .voice-search
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+    .svg-inline--fa
+      width: 16px;
+      height: auto;

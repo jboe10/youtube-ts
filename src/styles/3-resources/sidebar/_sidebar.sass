@@ -1,0 +1,43 @@
+.home-sidebar-collapsed
+  display: inline-flex;
+  flex-direction: column;
+  .collapsed-sidebar-category
+    padding: 2em;
+    svg
+      width: 1em;
+      height: auto;
+.home-sidebar
+  max-width: 14em;
+  max-height: 100%;
+  .sidebar-category
+  .sidebar-home
+    .sidebar-group
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      border-bottom: 1px solid $hoverLightGray;
+      padding-bottom: 1em;
+      padding-top: 1em;
+      h4
+        color: $darkGray;
+        font-size: .95em;
+        margin-left: 2.0em;
+        text-transform: uppercase;
+    .g-subs
+      position: relative
+      padding-bottom: 0;
+      .subs-button
+        font-size: .95em;
+        width: 100%;
+        padding-left: 2.4em;
+        padding-top: .5em;
+        padding-bottom: .5em
+        &:hover
+          background-color: $hoverLightGray;
+        span
+          margin-left: 2.3em;
+  
+// @media screen and ( max-width: 805px) 
+//   .home-sidebar-collapsed
+//     display: none;
+  
